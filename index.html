@@ -7,11 +7,22 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
-    <button onclick="runGame(0)">Pedra</button>
-    <button onclick="runGame(1)">Papel</button>
-    <button onclick="runGame(2)">Tesoura</button>
+    <main style="margin-top: 6vw;" class="contentSpace">
+        <h1>じゃんけんぽん</h1>
+        <h5>Faça sua jogada</h5>
+        <button onclick="runGame(0)">
+            <i class="fa-regular fa-hand-back-fist"></i>
+        </button>
+        <button onclick="runGame(1)">
+            <i class="fa-regular fa-hand"></i>
+        </button>
+        <button onclick="runGame(2)">
+            <i class="fa-regular fa-hand-scissors"></i>
+        </button>
+    </main>
 </body>
 <script src="rockPaperScissors.js"></script>
 </html>
