@@ -10,18 +10,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
-    <main style="margin-top: 6vw;" class="contentSpace">
+    <main style="margin-top: 4vw;" class="contentSpace">
         <h1>じゃんけんぽん</h1>
         <h5>Faça sua jogada</h5>
-        <button onclick="runGame(0)">
-            <i class="fa-regular fa-hand-back-fist"></i>
-        </button>
-        <button onclick="runGame(1)">
-            <i class="fa-regular fa-hand"></i>
-        </button>
-        <button onclick="runGame(2)">
-            <i class="fa-regular fa-hand-scissors"></i>
-        </button>
+        <br>
+        <br>
+        <div class="buttonsSection">
+            <button onclick="runGame(0)">
+                <i class="fa-regular fa-hand-back-fist"></i>
+            </button>
+            <button onclick="runGame(1)">
+                <i class="fa-regular fa-hand"></i>
+            </button>
+            <button onclick="runGame(2)">
+                <i class="fa-regular fa-hand-scissors"></i>
+            </button>
+        </div>
+        <br>
+        <br>
+        <br>
+        <h2>Pontuação</h2>
+        <br>
+        <div style="display:flex;justify-content:space-between">
+            <h4>You</h4>
+            x
+            <h4>Machine</h4>
+        </div>
+        <br>
+        <div style="display:flex;justify-content:space-between;">
+            <h4 id="playerPoints">0</h4>
+            <h4 id="machinePoints">0</h4>
+        </div>
+
+        
+
     </main>
 </body>
 <script src="rockPaperScissors.js"></script>

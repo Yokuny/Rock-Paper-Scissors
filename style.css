@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
     color: #f5585e;
+    font-family: system-ui, -apple-system,
+    BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
 }
 body{
     width: 100%;
@@ -9,20 +13,34 @@ body{
     justify-content: center;
     background-color: #111314;
 }
+.buttonsSection{
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+}
+@media only screen and (max-width: 600px){
+    .buttonsSection{
+        align-items: center;
+        flex-direction: column;
+    }
+}
 @media only screen and (max-width: 600px){
     .contentSpace{
         display: flex;
         flex-direction: column;
     }
 }
+@media only screen and (max-width: 600px){
+    button{
+        margin: 1vw 0px;
+    }
+}
 button{
-    margin: 1vw;
-    padding: 4vw;
-    max-width: 400px;
-    max-height: 400px;
+    padding: 3.4vw;
+    max-width: 360px;
+    max-height: 360px;
     background-color: #111314;
     border: #f5585e solid;
-    border-radius: 10px;
 }
 button:hover{
     border: transparent solid;
@@ -34,7 +52,7 @@ button:hover{
     }
 }
 i{
-    font-size: 8vw;
+    font-size: 5vw;
     color:#f5585e;
 }
 i:hover{
@@ -43,7 +61,12 @@ i:hover{
 }
 h1{
     text-align: center;
-    font-size: 6vw
+    font-size: 6vw;
+    font-family:initial;
+}
+h1:hover{
+    color:#111314;
+    background-color: #77c699;
 }
 @media only screen and (max-width: 600px){
     h1{
@@ -52,16 +75,44 @@ h1{
 }
 h5{
     text-align: center;
-    font-size: 3vw;
-    margin-bottom: 2vw;
-    font-family: system-ui, -apple-system,
-    BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans',
-    'Helvetica Neue', sans-serif;
+    font-size: 2vw;
     color:#77c699;
+    padding: .4vw;
+}
+h5:hover{
+    color:#111314;
+    background-color: #f5585e;
 }
 @media only screen and (max-width: 600px){
     h5{
         font-size: 4vw;
+    }
+}
+h2{
+    background-color: #f5585e;
+    color: #111314;
+    text-align: center;
+    border: 2px solid #f5585e;
+    
+}
+@media only screen and (max-width: 600px){
+    h2{
+        font-size: 2.8vw;
+    }
+}
+h4{
+    font-size: 2vw;
+    color: #77c699;
+    border: 2px solid transparent;
+    text-align: center;
+    padding: .4vw;
+    
+}
+h4:hover{
+    border: 2px solid #77c699;
+}
+@media only screen and (max-width: 600px){
+    h4{
+        font-size: 2.6vw;
     }
 }
