@@ -9,13 +9,16 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
+<style>
+    .marginX{
+        margin: 2vw 0px;
+    }
+</style>
 <body>
-    <main style="margin-top: 4vw;" class="contentSpace">
+    <main style="margin-top: 2vw;" class="contentSpace">
         <h1>じゃんけんぽん</h1>
         <h5>Faça sua jogada</h5>
-        <br>
-        <br>
-        <div class="buttonsSection">
+        <div class="buttonsSection marginX">
             <button onclick="runGame(0)">
                 <i class="fa-regular fa-hand-back-fist"></i>
             </button>
@@ -26,22 +29,22 @@
                 <i class="fa-regular fa-hand-scissors"></i>
             </button>
         </div>
-        <br>
-        <br>
-        <br>
-        <h2>Pontuação</h2>
-        <br>
-        <div style="display:flex;justify-content:space-between">
-            <h4>You</h4>
+        <h2 class="marginX">Pontuação</h2>
+        <div style="display:flex; justify-content:space-between; width: 100%;">
+            <h4 style="text-align: start;">You</h4>
             x
-            <h4>Machine</h4>
+            <h4 style="text-align: end;">Machine</h4>
         </div>
-        <br>
-        <div style="display:flex;justify-content:space-between;">
-            <h4 id="playerPoints">0</h4>
-            <h4 id="machinePoints">0</h4>
+        <div style="display:flex; justify-content:center">
+            <h3 id="playerPoints">0</h3>
+            <h3 id="machinePoints">0</h3>
         </div>
-
+        <div style="display:flex; justify-content:center">
+            <ul id="playerPoints">
+            </ul>
+            <ul id="machinePoints">
+            </ul>
+        </div>
         
 
     </main>
