@@ -38,8 +38,8 @@ function winCheck(playerValue, machineValue){
 
 function machineWinCount(){
   let machinePointsTag = document.getElementById("machinePoints");
+  machinePointsTag.style.backgroundColor = `rgba(190, 102, 129, ${(((parseInt(machinePointsTag.textContent)*2)/10))})`;
   if(parseInt(machinePointsTag.textContent) == 3){
-    machinePointsTag.style.backgroundColor = "#a56377";
     machinePointsTag.style.color = "#111314";
   }
   if(parseInt(machinePointsTag.textContent) != 5){
@@ -53,8 +53,8 @@ function machineWinCount(){
 
 function playerWinCount(){
   let playerPointsTag = document.getElementById("playerPoints");
+  playerPointsTag.style.backgroundColor = `rgba(29, 172, 237, ${(((parseInt(playerPointsTag.textContent)*2)/10))})`;
   if(parseInt(playerPointsTag.textContent) == 3){
-    playerPointsTag.style.backgroundColor = "#1daced";
     playerPointsTag.style.color = "#111314";
   }
   if(parseInt(playerPointsTag.textContent) != 5){
