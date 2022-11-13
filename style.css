@@ -96,6 +96,11 @@ h2{
     border: 2px solid #f5585e;
     
 }
+h2:hover{
+    background-color: #111314;
+    border: 2px solid transparent;
+    color: #f5585e;
+}
 @media only screen and (max-width: 600px){
     h2{
         font-size: 2.8vw;
