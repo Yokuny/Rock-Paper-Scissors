@@ -38,19 +38,31 @@ function winCheck(playerValue, machineValue){
 
 function machineWinCount(){
   let machinePointsTag = document.getElementById("machinePoints");
+  if(parseInt(machinePointsTag.textContent) == 3){
+    machinePointsTag.style.backgroundColor = "#a56377";
+    machinePointsTag.style.color = "#111314";
+  }
   if(parseInt(machinePointsTag.textContent) != 5){
     machinePointsTag.textContent = (parseInt(machinePointsTag.textContent)) + 1;
   }else{
     machinePointsTag.textContent = "MACHINE WIN";
+    alert("MACHINE WIN. \n Sad. But you can press 'ok' button and try again.");
+    document.location.reload(true);
   }
 }
 
 function playerWinCount(){
   let playerPointsTag = document.getElementById("playerPoints");
+  if(parseInt(playerPointsTag.textContent) == 3){
+    playerPointsTag.style.backgroundColor = "#1daced";
+    playerPointsTag.style.color = "#111314";
+  }
   if(parseInt(playerPointsTag.textContent) != 5){
     playerPointsTag.textContent = (parseInt(playerPointsTag.textContent)) + 1;
   }else{
     playerPointsTag.textContent = "YOU WIN";
+    alert("YOU WIN. \n Now you have a blessing from God \n Jesus loves you");
+    document.location.reload(true);
   }
 }
 
